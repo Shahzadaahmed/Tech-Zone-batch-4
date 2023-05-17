@@ -1,0 +1,105 @@
+/*
+#section-1 {
+    background-color: lightblue;
+}
+
+#section-2 {
+    background-color: yellow;
+}
+
+div {
+    background-color: lightgreen;
+}
+
+.para-1 {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.paragraph-2 {
+    color: red;
+}
+*/
+
+
+/* * {
+    background-color: yellow;
+    color: red;
+} */
+
+/* body {
+    background-color: blue;
+    color: white;
+} */
+
+/* html {
+    background-color: black;
+    color: yellow;
+} */
+
+/*
+p {
+    color: darkblue;
+}
+
+p > b {
+    color: black;
+}
+
+.para-1 > i {
+    color: palevioletred;
+}
+
+li a {
+    color: darkblue;
+}
+
+.class-second {
+    color: purple;
+}
+
+.class-second {
+    color: silver !important;
+}
+
+.class-second {
+    color: black;
+}
+
+.bound {
+    color: blue;
+}
+
+b {
+    color: aqua;
+}
+*/
+
+h1 {
+    color: brown !important;
+}
+
+#footer-div > h1 {
+    color: gold;
+}
+
+.footer > .main-h1 {
+    color: pink;
+}
+
+div > .main-h1 {
+    color: darkblue;
+}
+
+.heading {
+    color: yellow;
+}
+
+.main-h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
