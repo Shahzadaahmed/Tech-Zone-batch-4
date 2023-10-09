@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: yellow;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-section img {
+    height: 250px;
+    width: 300px;
+}
+
+.left-section {
+    height: 250px;
+    width: 300px;
+    background-color: lightblue;
+    transition: .5s;
+    position: absolute;
+    left: 300px;
+}
+
+.right-section {
+    height: 250px;
+    width: 300px;
+    background-color: orange;
+    transition: .5s;
+    position: absolute;
+}
+
+.container:hover .left-section {
+    left: 0;
+}

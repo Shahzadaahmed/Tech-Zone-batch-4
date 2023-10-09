@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: #343A40 !important;
+    /* position: fixed;
+    z-index: 1;
+    width: 100%; */
+}
+
+.nav-links {
+    color: white !important;
+}
+
+.custom-img {
+    height: 90vh !important;
+}
+
+.slider-header {
+    color: black;
+}
+
+.content-section {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-content-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+@media screen and (max-width : 1000px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 70% !important;
+    }
+}

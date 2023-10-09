@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Control responsiveness when max-width = 800px */
+@media screen and (max-width : 800px) {
+    .container {
+        background-color: blueviolet;
+    }
+
+    .heading {
+        color: white;
+        text-transform: capitalize;
+    }
+}
+
+
+/* Control responsiveness when max-width = 500px */
+
+@media screen and (max-width : 500px) {
+    .container {
+        background-color: orange;
+    }
+
+    .heading {
+        color: red;
+    }
+}

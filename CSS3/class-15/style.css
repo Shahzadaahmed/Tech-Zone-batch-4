@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: blue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: blinker;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation function */
+@keyframes blinker {
+    0% {
+        color: red;
+        background-color: yellow;
+    }
+
+    25% {
+        color: white;
+        background-color: red;
+    }
+
+    50% {
+        font-size: 35px;
+        text-transform: uppercase;
+        background-color: black;
+        color: yellow;
+    }
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.inner-section {
+    width: 70%;
+    margin: auto;
+}
+
+.image-acontainer {
+    text-align: center;
+    padding: 15px;
+}
+
+.image-acontainer > .logo {
+    border-radius: 5px;
+}
+
+.list-container {
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-top-width: 3px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.list-item {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 12px;
+}
+
+.images-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.images-container .piano {
+    border-radius: 10px;
+    height: 150px;
+}
+
+.middle-image {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer > .footer-para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}

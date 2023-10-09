@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.parent {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 33.3%;
+}
+
+.child-1 {
+    background-color: blue;
+}
+
+.child-2 {
+    background-color: red;
+}
+
+.child-3 {
+    background-color: green;
+}
+
+.animal {
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width : 800px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-section {
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-section {
+        height: 30vh;
+        padding: 20px;
+    }
+}

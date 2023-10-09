@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* div {
+    font-size: 20px;
+    border: 5px double black;
+    overflow: auto;
+    padding: 10px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+} */
+
+
+.one {
+    background-color: blue;
+}
+
+.two {
+    background-color: yellow;
+    color: black !important;
+}
+
+.three {
+    background-color: green;
+}
+
+.box {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin: 10px 0px 0px 15px;
+}

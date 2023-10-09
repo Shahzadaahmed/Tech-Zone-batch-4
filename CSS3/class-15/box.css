@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+.box {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    animation-name: animatedBox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animatedBox {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 400px;
+        background-color: lightskyblue;
+    }
+
+    50% {
+        left: 400px;
+        top: 400px;
+        background-color: lightgreen;
+    }
+
+    75% {
+        top: 400px;
+        left: 0;
+        background-color: gold;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: orange;
+    }
+}

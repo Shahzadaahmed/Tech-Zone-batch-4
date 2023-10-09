@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: yellow;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.section {
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center; align-items: center;
+    border: 1px solid white;
+    padding: 10px;
+
+    flex-grow: 1;
+    /* flex-basis: 300px; */
+}
+
+.two {
+    flex-grow: 2;
+}

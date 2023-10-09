@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-ontainer {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.nav-ontainer .list-section {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-section .list-item {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding-left: 15px;
+    padding-right: 15px;
+}
