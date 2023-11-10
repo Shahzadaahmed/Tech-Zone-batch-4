@@ -1,0 +1,94 @@
+(Tuesday, Thursday, Saturday) (TTS Batch Course Outline)
+
+Current Module (2): (Front-End)(Website and Web Application)(JavaScript, Advance JavaScript and EcmaScript)
+
+Remaining Topics
+
+(JavaScript)
+1: Functions. (Done).
+2: Switch Statements. (Done).
+3: Local and globals variables, Scopes. (Done).
+4: Timer functions. (Synchronus and Asynchronus) (Done).
+10: Objects (Done).
+5: Local Storage.
+7: Window and this (Done)
+8: Events (Done).
+9: DOM (Done).
+
+
+(Advance JavaScript and EcmaScript)
+
+1: Variables (Done).
+2: Functions (Done).
+3: Template literals (Done).
+4: Loops (Done).
+5: Array methods (Done).
+6: Hoisting (Done).
+7: Rest parameters and spread operators (Done).
+8: Object and array destructring (Done).
+9: Oop (Done).
+10: Promises (Done).
+11: Then and catch (Done).
+12: Api integration (Done).
+13: Try and catch. (Done).
+14: Async await. (Done).
+
+(Note: Excluding Assignments and Exams)
+
+Solid projects using (Html5, Css3, Bootstrap, JavaScript, Advance JavaScript and EcmaScript)
+
+1: Calculator. (Done).
+2: Authentication using local storage (Done).
+3: Todo list app. (Done)
+4: Dice game (You vs computer) (Done).
+5: Cards game.
+6: Color flipper (Done).
+7: Image slider (With Buttons).
+8: Hotel menu website (Dynamic).
+9: Bidding game (Done).
+10: Dynamic Website (Done).
+
+(Duration: 4 Months)
+
+
+
+Module (3): (Front-End)(Website and Web Application)(React JS / Next JS / Redux JS)
+
+Topics:
+Will discuss later.
+
+(Duration: 3 Months)
+
+
+
+Module (4): (Front-End)(Mobile Application Android and Ios Based)(React Native)
+
+Topics:
+Will discuss later.
+
+(Duration: 2 months)
+
+
+
+Module (5): (Back-End)(All types of websites and applications)(Node JS and Express JS)
+
+Topics:
+Will discuss later.
+
+(Duration: 2 Months)
+
+
+
+Module (6): (Database)(All types of websites and applications)(Mongo DB)
+
+Topics:
+Will discuss later.
+
+(Duration: 1 Months)
+
+Important Notes: (Urdu m likh raha hun ta k tamam students ko samajh ajaye)
+1: In sb duration me assignments and exams ka duration shamil nahi hy.
+2: Kisi kisam ka revision shamil nahi hy in sb duration m.
+3: Revision agr hoga to tamam students k agreement p hoga q k us se duration time extend hoga.
+4: Yeh duration time mene 1st class student k hisab se bnaya hy otherwise time extend ho skta hy.
+5: Last Final Hackathon Project of 12 Hours (Will discuss later).
