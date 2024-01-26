@@ -1,8 +1,0 @@
-Website, Web Application, Mob ile Application for (Android and Ios) using MERN Stack Development.
-
-Module # 01:
-1: HTML5.
-2: Css3.
-3: Bootstrap.
-4: JavaScript.
-5: Advance JavaScript / EcmaScript.

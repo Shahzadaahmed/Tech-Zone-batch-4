@@ -52,12 +52,12 @@ Solid projects using (Html5, Css3, Bootstrap, JavaScript, Advance JavaScript and
 
 
 
-Module (3): (Front-End)(Website and Web Application)(React JS / Next JS / Redux JS)
+Module (3): (Front-End)(Website and Web Application)(React JS / Next JS)
 
 Topics:
 Will discuss later.
 
-(Duration: 3 Months)
+(Duration: 3 Months).
 
 
 

@@ -1,0 +1,10 @@
+.headingTwo {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.customImg {
+    height: 100px;
+    width: 100px;
+}
