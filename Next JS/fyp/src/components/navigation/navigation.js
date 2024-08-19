@@ -21,14 +21,31 @@ import Link from 'next/link';
 const Navbar = () => {
     const [openNavSecond, setOpenNavSecond] = useState(false);
     const [authUser, setAuthUser] = useState(null);
+    const [currentOrder, setCurrentOrder] = useState([]);
 
     // Note: Mounted hook...!
     useEffect(() => {
         if (localStorage.getItem("AuthenticatedUser") != null) {
             let fetchUser = localStorage.getItem("AuthenticatedUser");
-            // console.log('User: ', fetchUser);
+            let actualUser = JSON.parse(fetchUser);
+            console.log('Userrrrr: ', actualUser);
+            if (fetchUser) setAuthUser(actualUser);
+        };
+    }, []);
 
-            if (fetchUser) setAuthUser(fetchUser);
+    // Note: FUnction to log out user...!
+    const logOutUser = () => {
+        localStorage.setItem("AuthenticatedUser", JSON.stringify(null));
+        window.location.reload();
+        alert("You have logged out successfully!");
+    };
+
+    useEffect(() => {
+        if (localStorage.getItem("YourOrder") != null) {
+            let fetchCurrentOrder = localStorage.getItem("YourOrder");
+            let jsonData = JSON.parse(fetchCurrentOrder);
+            console.log(jsonData);
+            setCurrentOrder(jsonData);
         };
     }, []);
 
@@ -55,20 +72,52 @@ const Navbar = () => {
                             </Link>
                         </MDBNavbarLink>
 
-                        <MDBNavbarLink>
+                        {
+                            (authUser && authUser?.email == "admin@gmail.com") ?
+                                (
+                                    <MDBNavbarLink>
+                                        <Link href={'/add-product'}>
+                                            Add Product
+                                        </Link>
+                                    </MDBNavbarLink>
+                                )
+                                : (null)
+                        }
+
+                        <MDBNavbarLink
+                            disabled={authUser != null}
+                        >
                             <Link href={'/signup'}>
                                 Sign Up
                             </Link>
                         </MDBNavbarLink>
 
-                        <MDBNavbarLink>
-                            <Link href={'/login'}>
-                                Log In
+                        {
+                            authUser ?
+                                (
+                                    <button onClick={logOutUser}>
+                                        Log Out
+                                    </button>
+                                ) :
+                                (
+                                    <MDBNavbarLink>
+                                        <Link href={'/login'}>
+                                            Log In
+                                        </Link>
+                                    </MDBNavbarLink>
+                                )
+                        }
+
+                        <MDBNavbarLink
+                            disabled={authUser == null}
+                        >
+                            <Link href={'/cart'}>
+                                Your Cart {currentOrder.length > 0 ? (<sup> {currentOrder.length} </sup>) : null}
                             </Link>
                         </MDBNavbarLink>
 
                         <MDBNavbarLink
-                            disabled={authUser != null}
+                            disabled={authUser == null}
                         >
                             <Link href={'/orders'}>
                                 Orders
@@ -84,7 +133,7 @@ const Navbar = () => {
                         paddingTop: "20px"
                     }}
                 >
-                    Shahzada Ahmed
+                    {authUser ? authUser.name : 'No User'}
                 </MDBInputGroup>
             </MDBContainer>
         </MDBNavbar>

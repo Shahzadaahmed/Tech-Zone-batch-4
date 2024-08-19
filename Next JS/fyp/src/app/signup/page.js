@@ -41,10 +41,10 @@ const SignUp = () => {
 
     // Note: Function to register user...!
     const saveUser = () => {
-        console.log(formStates);
+        // console.log(formStates);
 
         let isDuplicate = checkDuplicateUser(formStates.email);
-        console.log('DuplicateFound: ', isDuplicate);
+        // console.log('DuplicateFound: ', isDuplicate);
 
         if (isDuplicate) {
             alert(`User with the email address ${formStates.email} has already saved!`);
@@ -66,16 +66,16 @@ const SignUp = () => {
             let fetchUsers = localStorage.getItem("UsersList");
             let jsonData = JSON.parse(fetchUsers);
             setUsers(jsonData);
-            console.log('Users fetched successfully: ', jsonData);
+            // console.log('Users fetched successfully: ', jsonData);
         }
 
         else localStorage.setItem("UsersList", JSON.stringify([]));
     }, []);
 
     // Note: This hook will work on every update of users state...!
-    useEffect(() => {
-        console.log('Users: ', users);
-    }, [users]);
+    // useEffect(() => {
+    //     console.log('Users: ', users);
+    // }, [users]);
 
     return (
         <div>

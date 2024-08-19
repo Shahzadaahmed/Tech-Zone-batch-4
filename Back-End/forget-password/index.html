@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Password</title>
+  </head>
+  <body>
+    <h1>Reset Password!</h1>
+
+    <h3>
+      Please copy the user id from you mail and paste it to the input field
+      given below:
+    </h3>
+    <input type="text" id="uid-field" />
+
+    <h3>Please enter a new password</h3>
+    <input type="password" id="password-field" />
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="resetPassword()">Reset Password</button>
+
+    <!-- Note: Axios library CDN links -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
+      integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Note: My custom JS file -->
+    <script src="./app.js"></script>
+  </body>
+</html>

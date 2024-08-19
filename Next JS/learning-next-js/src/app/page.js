@@ -470,6 +470,7 @@ import { useRouter } from 'next/navigation';
 import Header from '@/components/header/header';
 
 const App = () => {
+  console.log('Hello!');
 
   const router = useRouter();
 
@@ -478,12 +479,37 @@ const App = () => {
     router.push("/about");
   };
 
+  const getBase64 = (file) => {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+      console.log('Res: ', reader.result);
+    };
+    reader.onerror = function (error) {
+      console.log('Error: ', error);
+    };
+  }
+
+  const getFileData = (e) => {
+    // const acceptableTypes = ['png', 'jpg'];
+    const file = e.target.files[0];
+    // const type = file.type.slice(file.type.indexOf('/') + 1);
+    console.log(file);
+
+    file && getBase64(file);
+  };
+
   return (
     <div>
-      <h1> Welcome to Next JS Routing! </h1>
+      {/* <h1> Welcome to Next JS Routing! </h1>
       <Header screenName="Home" />
 
-      <button onClick={goToAbout}> Go to about screen </button>
+      <button onClick={goToAbout}> Go to about screen </button> */}
+
+      <label>
+        Upload Image:
+        <input type='file' onChange={getFileData} />
+      </label>
     </div>
   );
 };
